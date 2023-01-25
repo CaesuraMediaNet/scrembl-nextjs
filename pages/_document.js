@@ -36,6 +36,12 @@ export default function Document() {
         src="/js/scrembl.js"
         strategy="lazyOnload"
       />
+	  <Script
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+		data-ad-client="ca-pub-1254785829011101"
+        strategy="beforeInteractive"
+		async={true}
+      />
       </body>
     </Html>
   )
