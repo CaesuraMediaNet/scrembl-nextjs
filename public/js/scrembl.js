@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Scrembl JavaScript (c) Andy CRAGG, 2021
+ * Scrembl JavaScript (c) Caesura Media Limited, 2023
  */
 $(document).ready(function() {
 	if (document.querySelector ('#todays-date-so-it-is')) {
@@ -19,6 +19,8 @@ $(document).ready(function() {
 	document.querySelector ('#copy-scrembled'  ).style.color   ='black';
 	document.querySelector ('#reload-icon'     ).classList.add ('hidden');
 
+	// Scremble.
+	//
 	document.querySelector ('#scrembl').onclick = function (event) {
 		document.querySelector ('#copy-scrembled'  ).style.color ='black';
 		var input_text  = document.querySelector ('#input-text').value.trim();
