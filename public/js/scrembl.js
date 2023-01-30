@@ -92,6 +92,7 @@ $(document).ready(function() {
 		document.querySelector ('#copy-scrembled').style.color ='#8fcae4';
 		var scr_tooltip = document.getElementById("copy-scrembled-scr-tooltip");
 		scr_tooltip.innerHTML = "Copied to Clipboard!";
+		copyText.blur();
 	}
 	document.querySelector ('#copy-scrembled').onmouseout = function (event) {
 		var scr_tooltip = document.getElementById("copy-scrembled-scr-tooltip");
@@ -106,6 +107,7 @@ $(document).ready(function() {
 		document.querySelector ('#copy-unscrembled').style.color ='#8fcae4';
 		var scr_tooltip = document.getElementById("copy-unscrembled-scr-tooltip");
 		scr_tooltip.innerHTML = "Copied to Clipboard!";
+		copyText.blur();
 	}
 	document.querySelector ('#copy-unscrembled').onmouseout = function (event) {
 		var scr_tooltip = document.getElementById("copy-unscrembled-scr-tooltip");

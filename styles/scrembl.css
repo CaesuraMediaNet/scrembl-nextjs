@@ -17,14 +17,6 @@ p {
 	justify-content        : space-between;
 	align-items            : center;
 }
-.copy-icon {
-	font-size              : 1.3rem!important;
-	color                  : black;
-}
-.small-icon {
-	font-size              : 1.0rem!important;
-	color                  : #7b8dac!important;
-}
 .reload-icon {
 	float                  : right!important;
 	margin-top             : 10px!important;
@@ -40,7 +32,7 @@ p {
 .far, .fas {
 	font-size              : 33px;
 	margin                 : 5px;
-	color                  : #cb12a0;
+	color                  : #7b8dac!important;
 }
 .big_x {
 	font-size              : 40px;
@@ -71,6 +63,7 @@ textarea.form-control {
 	display                : inline-block;
 	position               : absolute;
 	margin-left            : 10px;
+	margin-top             : -40px;
 }
 
 .scr-tooltip .scr-tooltiptext {

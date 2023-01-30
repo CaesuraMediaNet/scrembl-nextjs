@@ -34,12 +34,12 @@ export default function Home() {
       <main className={font.className}>
 	  	<div className="container-fluid">
 			<div className="row">
-				<div className="col-md-8 m-auto">
+				<div className="col-sm-10 col-md-8 col-lg-8 m-auto">
 					<div className="header">
 						<h1 className="mt-4">Scrembl</h1>
-						<i id="help-icon"     className="fas fa-question    small-icon" data-bs-toggle="modal" data-bs-target="#modal-default"></i>
-						<i id="privacy-icon"  className="fas fa-user-secret small-icon" data-bs-toggle="modal" data-bs-target="#modal-privacy"></i>
-						<i id="reload-icon"   className="fas fa-sync-alt    small-icon"></i>
+						<i id="help-icon"     className="fas fa-question" data-bs-toggle="modal" data-bs-target="#modal-default"></i>
+						<i id="privacy-icon"  className="fas fa-user-secret" data-bs-toggle="modal" data-bs-target="#modal-privacy"></i>
+						<i id="reload-icon"   className="fas fa-sync-alt"></i>
 					</div>
 					<div className="text-right">
 						<textarea
@@ -51,13 +51,13 @@ export default function Home() {
 					<button id="scrembl" type="button" className="btn bg-gradient-secondary btn-md">
 						Scrembl
 					</button>
-					<div className="text-right">
+					<div className="text-center">
 						<div className="scr-tooltip">
 							<div id="copy-scrembled" className="hidden">
 								<span className="scr-tooltiptext" id="copy-scrembled-scr-tooltip">
 									Copy to clipboard
 								</span>
-								<i className="far fa-clipboard small-icon copy-icon"></i>
+								<i className="far fa-clipboard"></i>
 							</div>
 						</div>
 						<textarea
@@ -69,13 +69,13 @@ export default function Home() {
 					<button id="unscrembl" type="button" className="btn bg-gradient-secondary btn-md">
 						UnScrembl
 					</button>
-					<div className="text-right">
+					<div className="text-center">
 						<div className="scr-tooltip">
 							<div id="copy-unscrembled" className="hidden">
 								<span className="scr-tooltiptext" id="copy-unscrembled-scr-tooltip">
 									Copy to clipboard
 								</span>
-								<i className="far fa-clipboard small-icon copy-icon"></i>
+								<i className="far fa-clipboard"></i>
 							</div>
 						</div>
 						<textarea
@@ -88,7 +88,7 @@ export default function Home() {
 			</div>
 		</div>
 		<div className="modal fade" id="modal-default" tabIndex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
-            <div id="modal-size-mod" className="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div id="modal-size-mod" className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close">
@@ -124,19 +124,19 @@ export default function Home() {
 							<h6>Icons : </h6>
 							<p className="header">
 								<span>
-									<i id="help-icon-desc"     className="fas fa-question    small-icon"></i>
+									<i id="help-icon-desc"     className="fas fa-question    "></i>
 									Help!
 								</span>
 								<span>
-									<i id="privacy-icon-desc"  className="fas fa-user-secret small-icon"></i>
+									<i id="privacy-icon-desc"  className="fas fa-user-secret "></i>
 									Privacy Notice
 								</span>
 								<span>
-									<i id="reload-icon-desc"   className="fas fa-sync-alt    small-icon"></i>
+									<i id="reload-icon-desc"   className="fas fa-sync-alt    "></i>
 									Clear all big text areas.
 								</span>
 								<span>
-									<i className="far fa-clipboard small-icon"></i>
+									<i className="far fa-clipboard"></i>
 									Copy to Clipboard
 								</span>
 							</p>
