@@ -160,7 +160,7 @@ export default function Home() {
 						<div className="container-fluid">
 							<h6>Welcome to Scrembl!</h6>
 							<p> Here is a our
-								<a rel="noreferrer" target="_blank" href="https://www.termsfeed.com/live/cbb7355a-3c36-4ce9-b66f-eac0b558a2f7"> Privacy Notice </a>
+								<a rel="noreferrer" target="_blank" href="/privacy-notice.html"> Privacy Notice </a>
 								which opens in a new window or tab!
 							</p>
 						</div>
