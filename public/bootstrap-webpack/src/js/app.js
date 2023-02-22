@@ -1,0 +1,10 @@
+require ('bootstrap/dist/css/bootstrap.min.css');
+require ('../css/soft-design-system.min.css');
+require ('../css/nucleo-icons.css');
+require ('../css/nucleo-svg.css');
+require ('../css/scrembl.css');
+window.$ = require('jquery');
+require ('../js/popper.min.js');
+window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
+require ('../js/soft-design-system.min.js');
+require('./scrembl.js');

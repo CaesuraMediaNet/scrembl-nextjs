@@ -1,0 +1,168 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=yes">
+		<meta name="format-detection" content="date=yes">
+		<meta name="format-detection" content="address=yes">
+		<meta name="format-detection" content="email=no">
+		<meta name="theme-color"      content="#cb0c9f">
+		<meta name="description"      content="Scrembl : srembl messages, de-scrembl them back. Simple!">
+		<meta name="keywords"         content="Scrembl, message, simple obfustication">
+		<meta name="author"           content="Development">
+		<meta name="viewport"         content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Scrembl</title>
+
+        <link rel="apple-touch-icon" sizes="72x72" type="image/png" href="./src/img/favicon4.png">
+        <link rel="icon"             sizes="72x72" type="image/png" href="./src/img/favicon4.png">
+        <link rel="shortcut icon"    sizes="72x72" type="image/png" href="./src/img/favicon4.png">
+
+		<script               src="https://kit.fontawesome.com/b958b52ac7.js"></script>
+
+		<link type="text/css" href="./dist/main.css" rel="stylesheet">
+	</head>
+	<body data-spy="scroll" data-target="#navbar1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8 m-auto">
+					<div class="header">
+						<h1>Scrembl</h1>
+						<i id="help-icon"     class="fas fa-question    small-icon" data-bs-toggle="modal" data-bs-target="#modal-default"></i>
+						<i id="privacy-icon"  class="fas fa-user-secret small-icon" data-bs-toggle="modal" data-bs-target="#modal-privacy"></i>
+						<i id="reload-icon"   class="fas fa-sync-alt    small-icon"></i>
+					</div>
+					<div class="text-right">
+						<textarea
+							rows="7"
+							id="input-text"
+							placeholder="Paste message to Scrembl here"
+							class="form-control form-control-lg"></textarea>
+					</div>
+					<button id="scrembl" type="button" class="btn bg-gradient-secondary btn-md">
+						Scrembl
+					</button>
+					<div class="text-right">
+						<div class="scr-tooltip">
+							<div id="copy-scrembled" class="hidden">
+								<span class="scr-tooltiptext" id="copy-scrembled-scr-tooltip">
+									Copy to clipboard
+								</span>
+								<i class="ni ni-single-copy-04 copy-icon"></i>
+							</div>
+						</div>
+						<textarea
+							rows="7"
+							id="output-text"
+							placeholder="Or paste Scrembled message here"
+							class="form-control form-control-lg"></textarea>
+						</div>
+					<button id="unscrembl" type="button" class="btn bg-gradient-secondary btn-md">
+						UnScrembl
+					</button>
+					<div class="text-right">
+						<div class="scr-tooltip">
+							<div id="copy-unscrembled" class="hidden">
+								<span class="scr-tooltiptext" id="copy-unscrembled-scr-tooltip">
+									Copy to clipboard 
+								</span>
+								<i class="ni ni-single-copy-04 copy-icon"></i>
+							</div>
+						</div>
+						<textarea
+							rows="7"
+							id="unscrembled-text"
+							placeholder="Unscrembled results show here"
+							class="form-control form-control-lg"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+            <div id="modal-size-mod" class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-window-close big_x"></i></span>
+                        </button>
+                    </div>
+                    <div id="modal-body">
+						<div class="container-fluid">
+							<h6>Welcome to Scrembl!</h6>
+							<p>Here you can convert some text into some other text which isn't easily readable by humans.  You can then paste this Scrembled
+							text into the social media, email, text etc of your choice for others to be able to convert it back - using Scrembl.
+							</p>
+							<p>Start by typing your message into the first big text area, then click on SCREMBL then you'll see the Scrembled text
+							in the middle big text area. Click on UNSCREMB to see it converting it back.  So to convert a Scrembled message, then
+							paste that into the middle big text area and click UNSCREMB- the bottom bit text area will be the original message. Job's a good'un!
+							</p>
+							<p>
+								Oh, and each Scrembled message only lasts 24hrs from when it was first Scrembled.
+							</p>
+							<p>You could even do this more than once - for extra obfustication.
+							</p>
+							<p>And that is the key here - it is not "encryption", but obfustication - there's no secret key, just some computer code 
+							that runs in your browser to convert letters, numbers, dots and dashes etc into something else.  
+							</p>
+							<h6>
+							NO messages are saved to any server or database!
+							</h6>
+							<p>
+								That's it - there is no warrantee or guarantee of anything here.  If it doesn't work, then I'm sorry, so don't use Scrembl
+								for anything <i>really</i> important!
+							</p>
+							<hr />
+							<h6>Icons : </h6>
+							<p class="header">
+								<span>
+									<i id="help-icon-desc"     class="fas fa-question    small-icon"></i>
+									Help!
+								</span>
+								<span>
+									<i id="privacy-icon-desc"  class="fas fa-user-secret small-icon"></i>
+									Privacy Notice
+								</span>
+								<span>
+									<i id="reload-icon-desc"   class="fas fa-sync-alt    small-icon"></i>
+									Clear all big text areas.
+								</span>
+								<span>
+									<i class="ni ni-single-copy-04 copy-icon"></i>
+									Copy to Clipboard
+								</span>
+							</p>
+						</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link ml-auto" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="modal fade" id="modal-privacy" tabindex="-1" role="dialog" aria-labelledby="modal-privacy" aria-hidden="true">
+            <div id="modal-size-mod" class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-window-close big_x"></i></span>
+                        </button>
+                    </div>
+                    <div id="modal-body">
+						<div class="container-fluid">
+							<h6>Welcome to Scrembl!</h6>
+							<p> Here is a our 
+								<a target="_blank" href="https://www.termsfeed.com/live/cbb7355a-3c36-4ce9-b66f-eac0b558a2f7">Privacy Notice</a>
+								Which opens in a new window or tab!
+							</p>
+						</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link ml-auto" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<script src="https://cdn.jsdelivr.net/npm/js-base64@2.5.2/base64.min.js"></script>
+		<script src="./dist/bundle.js" type="text/javascript"></script>
+	</body>
+</html>
