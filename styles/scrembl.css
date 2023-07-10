@@ -4,66 +4,65 @@
  *
  */
 a i {
-	color                  : #67748e;
+   color                  : #67748e;
 }
 p {
-	line-height            : 1.425;
-	font-weight            : 400;
-	font-size              : 13px;
+   line-height            : 1.425;
+   font-weight            : 400;
+   font-size              : 13px;
 }
 .header {
-	display                : flex;
-	flex-direction         : row;
-	justify-content        : space-between;
-	align-items            : center;
+   display                : flex;
+   flex-direction         : row;
+   justify-content        : space-between;
+   align-items            : center;
 }
 .reload-icon {
-	float                  : right!important;
-	margin-top             : 10px!important;
-	color                  : #7b8dac!important;
+   float                  : right!important;
+   margin-top             : 10px!important;
+   color                  : #7b8dac!important;
 }
 /* Modal */
 .modal-title {
-	word-break             : break-all;
+   word-break             : break-all;
 }
 .modal-header {
-	border-bottom          : unset;
+   border-bottom          : unset;
 }
 .far, .fas {
-	font-size              : 33px;
-	margin                 : 5px;
-	color                  : #7b8dac!important;
+   font-size              : 33px;
+   margin                 : 5px;
+   color                  : #7b8dac!important;
 }
 .big_x {
-	font-size              : 40px;
-	color                  : #7b8dac!important;
+   font-size              : 40px;
+   color                  : #7b8dac!important;
 }
 .btn-close {
-	opacity                : 1.0;
-	position               : absolute;
-	right                  : 35px;
-	top                    : -5px;
+   opacity                : 1.0;
+   position               : absolute;
+   right                  : 35px;
+   top                    : -5px;
 }
 .btn-link {
-	color                  : #7b8dac!important;
+   color                  : #7b8dac!important;
 }
 /* Misc */
 .hidden {
-	/* max-height             : 0px!important; */
-	opacity                : 0.0!important;
+   opacity                : 0.0!important;
 }
 textarea.form-control {
-	transition             : none;
+   transition             : none;
 }
 
 /* 
  * https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
  */
 .scr-tooltip {
-	display                : inline-block;
-	position               : absolute;
-	margin-left            : 10px;
-	margin-top             : -40px;
+   display                : inline-block;
+   position               : absolute;
+   margin-left            : 10px;
+   margin-top             : -40px;
 }
 
 .scr-tooltip .scr-tooltiptext {
@@ -102,14 +101,14 @@ textarea.form-control {
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-	h1 {
-		font-size         : 2rem;
-	}
+   h1 {
+      font-size         : 2rem;
+   }
 }
 @media (max-width: 767.98px)  and (orientation: landscape) {
-	h1 {
-		font-size         : 1rem;
-	}
+   h1 {
+      font-size         : 1rem;
+   }
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
