@@ -192,6 +192,15 @@ export default function Home() {
                </div>
             </div>
          </div>
+         <hr />
+         <iframe
+            style={{border:"unset", height:"100vw", width:"95vw"}}
+            src="https://caesuramedia.com/ads"
+            loading="lazy"
+            width="95%"
+            height="100%"
+            title="Adverts by me"
+         ></iframe>
       </main>
       </>
    )
