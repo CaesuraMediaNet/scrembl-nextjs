@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script';
-import { Acme } from '@next/font/google'
+import { Acme } from 'next/font/google'
 
 const font = Acme ({
    subsets: ['latin'],
