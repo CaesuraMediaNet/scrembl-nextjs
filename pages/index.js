@@ -84,12 +84,6 @@ export default function Home() {
                         placeholder="Unscrembled results show here"
                         className="form-control form-control-lg"></textarea>
                   </div>
-                  <a 
-                     target="_blank"
-                     rel="noreferrer"
-                     href='https://play.google.com/store/apps/details?id=com.scremblv2&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                        <img width="140" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
-                  </a>
                </div>
             </div>
          </div>
